@@ -6,11 +6,12 @@ $layout-breakpoint-small: 640px;
 $layout-lg-container-width: 920px;
    
 /* --- Imports ---------------------------------------------------- */
-@import 'modern-normalize/modern-normalize.css';
-@import "@fontsource/titillium-web/latin-200.css";
-@import "@fontsource/titillium-web/latin-400.css";
+@import "npm:modern-normalize/modern-normalize.css";
+@import "npm:@fontsource/titillium-web/latin-200.css";
+@import "npm:@fontsource/titillium-web/latin-400.css";
 
 @import "print.scss" print;
+
 
 /* --- Custom styles ---------------------------------------------------- */
 html {
@@ -35,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 1em 0;
     }
 ul {
-    list-style-image: url(/assets/img/bullet.png);
+    list-style-image: url(/src/static/theme/bullet.png);
     padding-left: 0.9em;
     }
 li {
@@ -68,12 +69,12 @@ th {
 a 		    { text-decoration: none; }
 a:hover 	{ text-decoration: underline; }
 
-a[href$=".pdf"]   { padding-left: 27px; background: url(/assets/img/pdf.png) no-repeat 0 center;  }
-a[href^="mailto:"]		{ padding-left: 18px; background: url(/assets/img/mail.png) no-repeat 0 center;  }
+a[href$=".pdf"]   { padding-left: 27px; background: url(/src/static/theme/pdf.png) no-repeat 0 center;  }
+a[href^="mailto:"]		{ padding-left: 18px; background: url(/src/static/theme/mail.png) no-repeat 0 center;  }
 
 a.external, 
 a[href*="//"]:not([href*="www.waldorflehrerseminar-freiburg.de"]) { 
-    padding-right: 18px; background: url(/assets/img/external.png) no-repeat 100% center;
+    padding-right: 18px; background: url(/src/static/theme/external.png) no-repeat 100% center;
 }
 
 
@@ -221,7 +222,7 @@ body > nav {
     top: -195px;
 
     padding: 0 0;
-    background-image: url('/assets/img/header-fenster.jpg');
+    background-image: url('/src/static/theme/header-fenster.jpg');
     background-position: 0 100%;
     background-repeat: no-repeat;
     -moz-background-size: cover;
@@ -270,9 +271,9 @@ body > nav {
             background-color: transparent;
         }
     }
-    li.current_page 	    { background: rgba(103,39,79,0.7) url(/assets/img/current.png) no-repeat 50% 100%; }
+    li.current_page 	    { background: rgba(103,39,79,0.7) url(/src/static/theme/current.png) no-repeat 50% 100%; }
     li:hover 			    { background: rgba(220,50,0,0.7) none no-repeat 50% 100%; }
-    li.current_page:hover 	{ background-image: url(/assets/img/current.png);  }
+    li.current_page:hover 	{ background-image: url(/src/static/theme/current.png);  }
     
     li.current_page a:before {
         @media (max-width: $layout-breakpoint-small) {
@@ -298,7 +299,7 @@ body > nav {
         }
     
     li.first a {
-        background: url(/assets/img/home.png) no-repeat center 0.65em;
+        background: url(/src/static/theme/home.png) no-repeat center 0.65em;
         width: 80px;
         text-indent: -999em;
 
@@ -430,7 +431,7 @@ body > footer {
     }
     li.first a {
         padding-left: 20px;
-        background: url(/assets/img/top.png) no-repeat 0 50%;
+        background: url(/src/static/theme/top.png) no-repeat 0 50%;
     }
     li a {
         text-decoration: none;

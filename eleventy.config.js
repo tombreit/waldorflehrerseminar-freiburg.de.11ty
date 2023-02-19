@@ -1,15 +1,13 @@
-const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
 const EleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const {EleventyHtmlBasePlugin} = require("@11ty/eleventy");
 const fs = require('fs')
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-  eleventyConfig.addPlugin(EleventyVitePlugin);
   eleventyConfig.addPlugin(EleventyNavigationPlugin);
 
   eleventyConfig.addPassthroughCopy("src/static");
-  eleventyConfig.addPassthroughCopy("assets");
+  // eleventyConfig.addPassthroughCopy("src/assets");
 
   eleventyConfig.addFilter("truncateTitle", function(value) {
     /*  TODO: find a more elegant way to truncate our first names:
