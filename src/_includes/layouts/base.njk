@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | {{ site.fqdn }}</title>
+    <link rel="shortcut icon" href="{{ '/assets/favicon.ico' }}">
+    <link href="{{ '/assets/app.scss' }}" rel="stylesheet">
+</head>
+
+<body class="page--{% if page.fileSlug %}{{ page.fileSlug }}{% else %}home{% endif %}">
+
+<header>
+    <a href="{{ '/' }}">
+        <img src="{{ '/assets/img/wortbildmarke-web.svg' }}" alt="{{ site.title }}">
+    </a>
+</header>
+
+<nav>
+    <h6 class="hidden">Navigation</h6>
+    <ul>
+        {% set navPages = collections.all | eleventyNavigation %}
+        {%- for entry in navPages %}
+        <li class="
+            {% if page.url == entry.url %} current_page {% endif %}
+            {% if loop.first %} first {% elif loop.last %} last {% endif%}
+        ">
+            <a  
+            href="{{ entry.url }}"
+            >
+            {{ entry.key }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+
+<main>
+    {{ content | safe }}
+</main>
+
+<hr>
+
+<footer>
+    <ul>
+        <li class="first">
+            <a href="#top">Zum Seitenanfang</a>
+        </li>
+        <li>
+            <a href="{{ '/datenschutzerklaerung/' }}">Datenschutzerklärung</a>
+        </li>
+        <li class="last">
+            <a href="{{ '/impressum/' }}">Impressum</a>
+        </li>
+    </ul>
+</footer>
+
+{# <script type="module" src="{{ '/assets/app.js' }}"></script> #}
+</body>
+</html>

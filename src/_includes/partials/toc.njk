@@ -1,0 +1,16 @@
+<nav class="toc">
+    <h6>Auf dieser Seite</h6>
+    <ul>
+    {%- for entry in tocCollection | sort(false, false, 'data.order') -%}
+    <li>
+      <a href="#heading-{{ entry.fileSlug }}">
+        {%- if tocTruncateTitle -%}
+          {{ entry.data.title | truncateTitle  }}
+        {%- else -%}
+          {{ entry.data.title }}
+        {%- endif -%}
+      </a>
+    </li>
+    {%- endfor -%}
+    </ul>
+</nav>
