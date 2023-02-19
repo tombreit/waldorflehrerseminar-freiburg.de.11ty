@@ -19,7 +19,7 @@
   "scripts": {
     "eleventy:dev": "npx eleventy --serve",
     "eleventy:build": "npx eleventy",
-    "eleventy:gitlab-pages": "npx eleventy --pathprefix='waldorflehrerseminar-freiburg.de.11ty'",
+    "eleventy:gitlab-pages": "npx eleventy",
     "watch:sass": "parcel watch --no-hmr $npm_package_config_assets_src/app.scss --dist-dir $npm_package_config_assets_dist",
     "build:sass": "parcel build $npm_package_config_assets_src/app.scss --dist-dir $npm_package_config_assets_dist",
     "dev": "npm-run-all --parallel eleventy:dev watch:*",
