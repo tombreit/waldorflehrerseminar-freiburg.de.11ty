@@ -3,10 +3,9 @@
 ## Angaben gemäß §5 TMG:
 
 Büro: Berufsbegleitendes Waldorflehrerseminar Freiburg e.V.  
-Alte Strasse 62  
-79249 Merzhausen  
-Telefon: [+49 (0)761 4002526](tel:+497614002526)  
-E-Mail: [mail@waldorflehrerseminar-freiburg.de](mail@waldorflehrerseminar-freiburg.de)
+
+{% include 'partials/kontakt.njk' %}
+
 
 **Anerkannt als Ausbildungsstätte im Bund der Freien Waldorfschulen**
 
