@@ -1,3 +1,7 @@
+---
+templateEngineOverride: njk,md
+---
+
 # Impressum
 
 ## Angaben gemäß §5 TMG:

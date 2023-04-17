@@ -23,4 +23,4 @@ Bei Interesse wenden Sie sich gerne an:
 
 * Infos: [https://waldorflehrerseminar-freiburg.de/](https://waldorflehrerseminar-freiburg.de/)
 * Email: [mail@waldorflehrerseminar-freiburg.de](mailto:mail@waldorflehrerseminar-freiburg.de)
-* oder direkt an unseren Ansprechpartner: Frank Grave [0761/4002526](tel:+497614002526)
+* oder direkt an unseren Ansprechpartner: Frank Grave {{ site.phoneUrl|safe }}
