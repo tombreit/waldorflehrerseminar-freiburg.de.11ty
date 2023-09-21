@@ -17,7 +17,7 @@ Wir brauchen aber eine Menschheit, die tatsächlich aus dem tiefsten Innern hera
 
 ## Aktuelles
 
-* Kurs hat Mitte November begonnen. Quereinstieg bis Anfang Februar 2023 noch möglich.
+* {{ site.ausbildungsbeginnSnippet }}
 
 Bei Interesse wenden Sie sich gerne an:
 

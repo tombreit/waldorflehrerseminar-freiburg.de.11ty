@@ -15,7 +15,7 @@ Büro: Berufsbegleitendes Waldorflehrerseminar Freiburg e.V.
 
 ## Vertreten durch
 
-Annette Haage Riedlinger, Frank Grave
+Frank Grave
 
 Umsatzsteuer-ID: Umsatzsteuerbefreit
 

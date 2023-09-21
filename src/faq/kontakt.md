@@ -7,7 +7,7 @@ Bei Fragen wenden Sie sich bitte an das Büro des Berufsbegleitenden Waldorflehr
 
 |||
 |-|-|
-| Tel.:    | [0761/4002526](tel:+497614002526) |
+| Tel.:    | {{ site.phoneUrl }} |
 | E-Mail:  | [mail@waldorfseminar-freiburg.de](mailto:mail@waldorfseminar-freiburg.de) |
 
 Siehe auch: [Kontakt](/kontakt/)

@@ -46,7 +46,7 @@ Fortführung der menschenkundlichen Arbeit und Vertiefung einzelner waldorfpäda
 
 ## Ausbildungsdauer
 
-* **Quereinstieg bis Anfang Februar 2023 noch möglich**
+* {{ site.ausbildungsbeginnSnippet }}
 
   Kursdauer: 30 Monate
   Ferienzeiten (BW) sind unterrichtsfreie Zeit.
@@ -74,5 +74,4 @@ Siehe auch
 
 ## Siehe auch
 
-* [Studienordnung](/static/downloads/Waldorflehrerseminar-Freiburg_Studienordnung.pdf)
 * [Methodik](/static/downloads/Waldorflehrerseminar-Freiburg_Methodik-Klassenlehrer.pdf)
