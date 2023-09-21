@@ -70,7 +70,17 @@ a 		    { text-decoration: none; }
 a:hover 	{ text-decoration: underline; }
 
 a[href$=".pdf"]   { padding-left: 27px; background: url(/src/static/theme/pdf.png) no-repeat 0 center;  }
-a[href^="mailto:"]		{ padding-left: 18px; background: url(/src/static/theme/mail.png) no-repeat 0 center;  }
+
+a[href^="mailto:"],
+a[href^="tel:"] {
+    padding-left: 18px; 
+    background-repeat: no-repeat;
+    background-position: 0 center; 
+}
+
+a[href^="mailto:"]	{ background-image: url(/src/static/theme/mail.png); }
+a[href^="tel:"]		{ background-image: url(/src/static/theme/phone.svg); }
+
 
 a.external, 
 a[href*="//"]:not([href*="www.waldorflehrerseminar-freiburg.de"]) { 
